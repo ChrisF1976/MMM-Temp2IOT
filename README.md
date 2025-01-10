@@ -35,7 +35,7 @@ A [Temp2IOT](https://github.com/100prznt/Temp2IoT) device with two sensors conne
     position: "top_right",
     header: "Home Temperature",
     config: {
-        apiUrl: "http://192.168.178.140/api", // Replace with your API URL
+        apiUrl: "http://123.456.789.123/api", // Replace with your API URL
         updateInterval: 60 * 1000, // Update every 60 seconds
         replaceNames: ["Outside", "Shed"], // Custom names for sensors
         icons1: [
