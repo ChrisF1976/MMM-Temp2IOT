@@ -2,8 +2,6 @@
 
 **MMM-Temp2IOT** is a MagicMirror module designed to display temperature readings from **[Temp2IOT](https://github.com/100prznt/Temp2IoT)** sensors. The module fetches data from a the API and dynamically adjusts the displayed icons based on the current temperature. Perfect for monitoring indoor or outdoor temperatures with a touch of personalization.
 
----
-
 ## Features
 
 - Displays temperature.
@@ -13,13 +11,9 @@
 - easily customizable via CSS.
 - Integrates seamlessly into your MagicMirror setup.
 
----
-
 ## Example Screenshot
 
 ![MMM-Temp2IoT Example](MMM-Temp2IOT.png)
-
----
 
 ## Requirements
 A [Temp2IOT](https://github.com/100prznt/Temp2IoT) device with two sensors connected.
