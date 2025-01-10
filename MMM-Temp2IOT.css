@@ -1,0 +1,39 @@
+.MMM-Temp2IOT {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Modulinhalt rechts ausrichten */
+}
+
+.MMM-Temp2IOT header {
+    width: 100%; /* Header auf die volle Breite setzen */
+    text-align: right;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.MMM-Temp2IOT .sensor-row {
+    display: grid;
+    grid-template-columns: 40px auto; /* Zwei Spalten: Symbol (40px) und Text */
+    align-items: center;
+    gap: 5px; /* Abstand zwischen den Spalten */
+    margin-bottom: 10px; /* Abstand zwischen den Zeilen */
+    width: 100%; /* Zeilenbreite füllen */
+}
+
+.MMM-Temp2IOT .iconify {
+    font-size: 40px; /* Größere Symbole */
+    text-align: center; /* Symbole zentrieren */
+}
+
+.MMM-Temp2IOT .sensor-name {
+    font-size: 24px;
+    color: #999;
+    text-align: right; /* Text rechtsbündig */
+}
+
+.MMM-Temp2IOT .sensor-value {
+    text-align: right; /* Wert rechtsbündig */
+    font-size: 28px; /* Größere Schriftgröße */
+    color: #fff; /* Weißer Text */
+}
