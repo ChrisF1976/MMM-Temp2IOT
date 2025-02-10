@@ -18,22 +18,26 @@
     align-items: center;
     gap: 5px; /* Abstand zwischen den Spalten */
     margin-bottom: 10px; /* Abstand zwischen den Zeilen */
+    margin-right: 5px;
     width: 100%; /* Zeilenbreite füllen */
 }
 
 .MMM-Temp2IOT .iconify {
     font-size: 40px; /* Größere Symbole */
     text-align: center; /* Symbole zentrieren */
+    margin-right: 10px;
 }
 
 .MMM-Temp2IOT .sensor-name {
-    font-size: 24px;
+    font-size: 26px;
     color: #999;
     text-align: right; /* Text rechtsbündig */
+    margin-left:5px;
 }
 
 .MMM-Temp2IOT .sensor-value {
     text-align: right; /* Wert rechtsbündig */
-    font-size: 28px; /* Größere Schriftgröße */
+    font-size: 30px; /* Größere Schriftgröße */
+    font-weight: bold;
     color: #fff; /* Weißer Text */
 }
