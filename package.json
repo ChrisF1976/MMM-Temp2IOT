@@ -1,0 +1,21 @@
+{
+  "name": "MMM-Temp2IOT",
+  "version": "1.0.0",
+  "description": "A MagicMirror² module that displays temperature data from an IoT API with dynamic icons based on sensor values.",
+  "main": "MMM-Temp2IOT.js",
+  "scripts": {
+    "start": "echo 'This is a MagicMirror module and doesn\\'t need to be started manually.'"
+  },
+  "author": "ChrisF1976",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChrisF1976/MMM-Temp2IOT"
+  },
+  "keywords": [
+    "Temp2IOT",
+    "temperature",
+    "sensor",
+    "weather",
+  ]
+}
