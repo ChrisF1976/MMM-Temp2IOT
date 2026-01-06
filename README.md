@@ -61,6 +61,13 @@ A [Temp2IOT](https://github.com/100prznt/Temp2IoT) device with two sensors conne
  ```
   
 3. Restart MagicMirror
+
+## Update
+   ```bash
+   cd ~/MagicMirror/modules/MMM-Temp2IOT
+   git pull
+   npm install
+   ```
  
  ## Configuration Options
 
