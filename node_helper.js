@@ -1,5 +1,4 @@
 const NodeHelper = require("node_helper");
-const axios = require("axios");
 
 module.exports = NodeHelper.create({
     start: function () {
@@ -21,14 +20,23 @@ module.exports = NodeHelper.create({
         }
 
         try {
-            const response = await axios.get(apiUrl);
-            const sensors = response.data.sensors.map(sensor => ({
+            const response = await fetch(apiUrl);
+
+            if (!response.ok) {
+                throw new Error(`HTTP error ${response.status}`);
+            }
+
+            const data = await response.json();
+
+            const sensors = (data.sensors || []).map(sensor => ({
                 name: sensor.name, // Name from API (optional, not used in UI)
                 value: sensor.value
             }));
+
             this.sendSocketNotification("DATA_FETCHED", { sensors });
+
         } catch (error) {
-            console.error("Error fetching data:", error.message);
+            console.error("Error fetching data:", error.message || error);
 
             // Activate cooldown to avoid continuous error logging
             this.cooldown = true;
